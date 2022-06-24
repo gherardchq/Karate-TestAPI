@@ -1,3 +1,4 @@
+@ignore
 Feature: Reusable scenarios for post a user
 
 @Create

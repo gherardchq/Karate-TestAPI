@@ -9,5 +9,19 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'com.intuit.karate:karate-junit5:1.2.0'
+    testImplementation 'com.intuit.karate:karate-junit5:1.2.1.RC2'
+    testImplementation 'net.masterthought:cucumber-reporting:5.7.0'
+}
+
+test{
+    useJUnitPlatform()
+}
+
+sourceSets{
+    test{
+        resources{
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
 }

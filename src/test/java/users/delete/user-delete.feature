@@ -6,4 +6,3 @@ Feature: Delete user on reqres
     When method delete
     Then status 204
 
-    
